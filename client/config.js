@@ -29,8 +29,8 @@ const environments = {
         STRAPI_URL: 'https://cms.example.com',  // Update with staging URL
     },
     production: {
-        BASE_URL: 'inspiring-flow-production-06b6.up.railway.app',  // Update with production URL
-        STRAPI_URL: 'mrallround-facility-management-project-backend-production.up.railway.app',  // Update with production URL
+        BASE_URL: 'https://inspiring-flow-production-06b6.up.railway.app',  // Update with production URL
+        STRAPI_URL: 'https://mrallround-facility-management-project-backend-production.up.railway.app',  // Update with production URL
     }
 };
 
