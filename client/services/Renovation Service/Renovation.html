@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renovation Services - Mr. All Round</title>
+    <link rel="icon" type="image/png" href="../../assets/logoNew.png" />
+
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../footer/footer.css" />
+
+    <link rel="stylesheet" href="./renovation.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link href="../../fonts/fonts.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../navbar/navbar.css" />
+</head>
+<body>
+    <div id="page-content">
+        <section>
+            <nav class="navbar navbar-new navbar-expand-lg">
+                <div class="nav-container">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img alt="MrAllAround" width="70" height="50" id="navbar-logo" />
+                    </a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="toggler-line"></span>
+                        <span class="toggler-line"></span>
+                        <span class="toggler-line"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html" data-i18n="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../aboutUs/aboutUs.html" data-i18n="about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../career/career.html" data-i18n="career">Career</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle active"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    data-i18n="services">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" id="navbar-services-dropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="../CleaningService/Cleaning.html" data-i18n="cleaning">
+                                            Cleaning Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Property Maintenance/PropertyMaintenance.html" data-i18n="maintenance">
+                                            Property Maintenance
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item active" href="./Renovation.html" data-i18n="security">
+                                            Renovation Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Disposal Service/Disposal.html" data-i18n="disposal">
+                                            Disposal Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Relocation Service/Relocation.html" data-i18n="relocation">
+                                            Relocation Services
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-controls">
+                        <button
+                            class="dark-mode-toggle"
+                            id="darkModeToggle"
+                            aria-label="Toggle dark mode">
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <div class="language-selector">
+                            <input type="radio" class="btn-check" name="lang" id="eng" value="en" autocomplete="off" checked />
+                            <label class="lang-btn" for="eng">ENG</label>
+                            <input type="radio" class="btn-check" name="lang" id="ger" value="de" autocomplete="off" />
+                            <label class="lang-btn" for="ger">GER</label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="hero-section section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="serviceTitle"></h1>
+                    <p class="hero-subtitle" id="serviceSubtitle"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section section">
+            <div class="container">
+                <div class="intro-text" id="introText"></div>
+            </div>
+        </section>
+
+        <section class="offerings-section section section-gradient-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="offerSectionTitle"></h2>
+                    <div class="section-subtitle" id="offerSectionDescription"></div>
+                </div>
+                <div class="offerings-grid grid-auto-fit" id="offeringsContainer">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section section" style="display: none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="galleryTitle">Gallery</h2>
+                </div>
+                <div class="gallery-grid" id="galleryContainer">
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-component">
+        </section>
+
+        <link rel="stylesheet" href="../components/request-form/serviceForm.css" />
+        <div id="serviceFormModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 data-i18n="formTitle">Request Service</h2>
+                    <button class="modal-close" id="closeServiceFormBtn" aria-label="Close modal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="formLoadingState" style="display: none; padding: 2rem; text-align: center;">
+                    <p data-i18n="loadingForm">Loading form configuration...</p>
+                </div>
+
+                <form id="serviceRequestForm" class="service-form">
+                    <div class="form-section">
+                        <h3 data-i18n="contactInfo">Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName" data-i18n="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="email">Email *</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" data-i18n="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="dynamicFormFields"></div>
+
+                    <div class="form-section" style="margin-top: 1.5rem;">
+                        <h3 data-i18n="serviceDate">Service Date</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fromDate" data-i18n="fromDate">From Date *</label>
+                                <input type="date" id="fromDate" name="fromDate" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="toDate" data-i18n="toDate">To Date *</label>
+                                <input type="date" id="toDate" name="toDate" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group full-width">
+                            <label for="comments" data-i18n="additionalComments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" id="cancelFormBtn" data-i18n="cancel">
+                            Cancel
+                        </button>
+                        <button type="submit" class="btn-primary" data-i18n="submitRequest">
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="successModal" class="success-modal">
+            <div class="success-modal-content">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h2 data-i18n="successTitle">Thank You!</h2>
+                <p data-i18n="successMessage">Your service request has been submitted successfully. We will contact you shortly.</p>
+                <button class="success-btn" id="closeSuccessBtn" data-i18n="successButton">OK</button>
+            </div>
+        </div>
+
+        <section>
+            <footer class="footer">
+                <div class="footer-upper">
+                    <figure class="grid-item-brand-bottom">
+                        <img
+                            loading="lazy"
+                            class="brand-logo"
+                            alt="mr-allround logo"
+                            width="1355"
+                            height="1234"
+                            id="footer-logo" />
+                    </figure>
+
+                    <div class="footer-upper-nav">
+                        <div class="grid-item-bottom">
+                            <h4 data-i18n="navigationTitle">Navigation</h4>
+                            <nav class="bottom-nav">
+                                <ul class="link-list">
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../../index.html"
+                                            data-i18n="home"
+                                            >Home</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../../aboutUs/aboutUs.html"
+                                            data-i18n="about"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../../career/career.html"
+                                            data-i18n="career"
+                                            >Career</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../../aboutUs/aboutUs.html#Contact-us"
+                                            data-i18n="contactFooter"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="grid-item-bottom">
+                            <h4 data-i18n="serviceListTitle">Service list</h4>
+                            <nav class="bottom-nav">
+                                <ul class="link-list" id="footer-services-list">
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../CleaningService/Cleaning.html"
+                                            data-i18n="cleaning"
+                                            >Cleaning Services</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../Property Maintenance/PropertyMaintenance.html"
+                                            data-i18n="maintenance"
+                                            >Property Maintenance</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="./Renovation.html"
+                                            data-i18n="security"
+                                            >Renovation Services</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../Disposal Service/Disposal.html"
+                                            data-i18n="disposal"
+                                            >Disposal Services</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="underlined"
+                                            href="../Relocation Service/Relocation.html"
+                                            data-i18n="relocation"
+                                            >Relocation Services</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="grid-item-bottom">
+                            <h4 data-i18n="contactUsTitle">Contact Us</h4>
+                            <nav class="contact-list">
+                                <ul>
+                                    <li>
+                                        <span class="bottom-nav-contact">
+                                            <img
+                                                src="../../footer/assets/Icons/location.png"
+                                                alt="Location" class="location"/>
+                                            <span id="footer-address">
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bottom-nav-contact">
+                                            <img
+                                                src="../../footer/assets/Icons/mail.png"
+                                                alt="E-mail" class="email" />
+                                            <a
+                                                id="footer-email-link"
+                                                href="mailto:info@mrallround.ch">
+                                                <span
+                                                    id="footer-email-text">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bottom-nav-contact">
+                                            <img
+                                                src="../../footer/assets/Icons/telephone.png"
+                                                alt="Phone" class="phone"/>
+                                            <a
+                                                id="footer-phone-link"
+                                                href="tel:+41786925155">
+                                                <span
+                                                    id="footer-phone-text">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="social-icons-wrapper">
+                        <span class="grid-item">
+                            <a id="footer-facebook-link" href="" target="_blank">
+                                <img
+                                    src="../../footer/assets/Icons/facebook.png"
+                                    alt="Facebook"
+                            /></a>
+                        </span>
+                        <span class="grid-item">
+                            <a id="footer-instagram-link" href="" target="_blank">
+                                <img
+                                    src="../../footer/assets/Icons/instagram.png"
+                                    alt="Instagram"
+                            /></a>
+                        </span>
+                        <span class="grid-item">
+                            <a id="footer-linkedin-link" href="" target="_blank">
+                                <img
+                                    src="../../footer/assets/Icons/linkedin.png"
+                                    alt="LinkedIn"
+                            /></a>
+                        </span>
+                        <span class="grid-item">
+                            <a id="footer-whatsapp-link" href="" target="_blank">
+                                <img
+                                    src="../../footer/assets/Icons/whatsupp.png"
+                                    alt="WhatsApp"
+                            /></a>
+                        </span>
+                    </div>
+
+                    <small
+                        >Copyright ©2026 Mr. Allround. All rights
+                        reserved</small
+                    >
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="../../navbar/lightDark.js" defer></script>
+    <script type="module" src="./js/modules/main.js"></script>
+    <script type="module" src="../../strapiScripts/siteLogo.js"></script>
+    <script type="module" src="../../strapiScripts/footer.js"></script>
+    <script type="module" src="../../strapiScripts/navigation.js"></script>
+</body>
+</html>

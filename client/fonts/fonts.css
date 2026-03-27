@@ -1,0 +1,181 @@
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('ArticoExpanded-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('ArticoExpanded-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded ExtraLight Italic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Light Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('ArticoExpanded-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Medium Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Bold Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded ExtraBold Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Heavy Italic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Black.woff') format('woff');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Artico Expanded';
+  src: url('cretype  Artico Expanded Black Italic.woff') format('woff');
+  font-weight: 950;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+  font-family: 'Artico Expanded', sans-serif !important;
+}
+
+
+html {
+  font-family: 'Artico Expanded', sans-serif !important;
+}
+
+body {
+  font-family: 'Artico Expanded', sans-serif !important;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, button,
+input, textarea, select,
+li, label, td, th,
+.navbar, .nav-link, .dropdown-item,
+.footer, .section, .mainImageText,
+.servicesHeader, .statNumber, .statLabel {
+  font-family: 'Artico Expanded', sans-serif !important;
+}
